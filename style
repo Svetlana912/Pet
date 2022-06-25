@@ -1,0 +1,39 @@
+.container {
+  width: 1440px;
+  margin: 0 auto
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows:
+    50px
+    1fr
+    30px;
+  grid-gap: 10px;
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.main {
+  grid-area: main;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 25px;
+  align-items: center;
+}
+
+.site-navigation {
+
+}
